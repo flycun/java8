@@ -1,0 +1,12 @@
+# Java compiled #
+#################
+*.class
+
+# Eclipse #
+###########
+.classpath
+.project
+.settings
+target
+
+
