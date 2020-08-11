@@ -1,4 +1,5 @@
 package cn.imusic.example.java8.stream.groupby;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
@@ -20,20 +21,18 @@ public class Java8Examples4 {
                 new Item("apple", 10, new BigDecimal("9.99")),
                 new Item("banana", 10, new BigDecimal("19.99")),
                 new Item("apple", 20, new BigDecimal("9.99"))
-                );
+        );
 
-		//group by price
+        //group by price
         Map<BigDecimal, List<Item>> groupByPriceMap =
-			items.stream().collect(Collectors.groupingBy(Item::getPrice));
+                items.stream().collect(Collectors.groupingBy(Item::getPrice));
 
         System.out.println(groupByPriceMap);
 
-		// group by price, uses 'mapping' to convert List<Item> to Set<String>
-        Map<BigDecimal, Set<String>> result =
-                items.stream().collect(
-                        Collectors.groupingBy(Item::getPrice,
-                                Collectors.mapping(Item::getName, Collectors.toSet())
-                        )
+        // group by price, uses 'mapping' to convert List<Item> to Set<String>
+        Map<BigDecimal, Set<String>> result = items.stream()
+                .collect(Collectors.groupingBy(Item::getPrice,
+                                                Collectors.mapping(Item::getName, Collectors.toSet()))
                 );
 
         System.out.println(result);

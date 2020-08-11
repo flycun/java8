@@ -21,8 +21,8 @@ public class Java8Examples3 {
                 new Item("apple", 20, new BigDecimal("9.99"))
         );
 
-        Map<String, Long> counting = items.stream().collect(
-                Collectors.groupingBy(Item::getName, Collectors.counting()));
+        Map<String, Long> counting = items.stream()
+                .collect( Collectors.groupingBy(Item::getName, Collectors.counting()));
 
         System.out.println(counting);
 

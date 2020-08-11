@@ -27,6 +27,7 @@ public class NowJava8 {
 
         collect.forEach(System.out::println);
 
+
     }
 
 }
