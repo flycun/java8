@@ -5,9 +5,9 @@
   <nodes>
     <node x="38.0" y="81.0">java.util.concurrent.RunnableFuture</node>
     <node x="132.0" y="0.0">java.util.concurrent.Future</node>
-    <node x="54.0" y="162.0">java.util.concurrent.FutureTask</node>
     <node x="38.0" y="243.0">java.util.concurrent.ExecutorCompletionService.QueueingFuture</node>
-    <node x="217.0" y="239.0">java.util.concurrent.FutureTask.WaitNode</node>
+    <node x="54.0" y="162.0">java.util.concurrent.FutureTask</node>
+    <node x="180.0" y="243.0">java.util.concurrent.FutureTask.WaitNode</node>
     <node x="0.0" y="0.0">java.lang.Runnable</node>
   </nodes>
   <notes />
@@ -39,9 +39,9 @@
       <point x="32.0" y="15.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="605.5" y="322.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="146.0" y="137.0" />
   <SelectedNodes>
-    <node>java.util.concurrent.FutureTask.WaitNode</node>
+    <node>java.util.concurrent.RunnableFuture</node>
   </SelectedNodes>
   <Categories>
     <Category>Inner Classes</Category>
